@@ -1,0 +1,14 @@
+$(document).ready(function(){
+    $("#panel_registration").mouseenter(function(){
+        $("#flip_registration").slideDown(2000);
+    });
+	$("#button_close1").click(function(){
+        $("#flip_registration").slideUp(1000);
+    });
+	    $("#panel_enter").mouseenter(function(){
+			$("#flip_enter").slideDown(2000);
+    });
+	$("#button_close2").click(function(){
+        $("#flip_enter").slideUp(1000);
+    });	
+});

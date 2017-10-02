@@ -1,0 +1,344 @@
+@import url(reset.css);
+
+/*Главная страница с регистрации и авторизации*/
+
+#help_button {
+    position: fixed;
+    left: 0;
+    background: rgba(0, 170, 238, 0.3);
+    width: 28px;
+    height: 50px;
+    font: 40px Georgia;
+    color: #fff;
+    text-align: center;
+    border-radius: 0 5px 5px 0;
+	z-index: 998;
+}
+
+#s_panel {
+    position: fixed;
+    left: -300px;
+	top:0px;
+    background: rgba(0, 170, 238, 0.7);
+    width: 300px;
+    height: 150px;
+    padding: 30px 0 0 0;
+    border-radius: 0 5px 0 0;
+	z-index: 998;
+}
+
+.wrapper{
+	width:100%;	
+}
+
+#s_panel span{
+	font: 20px Georgia;
+    color: #fff;
+}
+
+#main{
+	margin: 0 auto;
+	width: 100%;
+	height: 900px;
+}
+
+#logo{
+	height: 136px;
+	width: 200px;
+	float: right;
+	margin:0 0 0 0;	
+}
+
+#header{
+	width:100%;
+	height:200px;
+	margin-top:0px;	
+}
+
+#Registration {
+	padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+	width: 300px;
+	background: rgba(0, 170, 238, 0);
+	position: relative;
+	float: left;
+}
+
+#Enter {
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    color: white;	
+	margin-right:0px;	
+	width: 300px;
+	background: rgba(0, 170, 238, 0);
+	float: left;
+	position: relative;
+}
+
+#panel_registration,#panel_enter{
+	width:290px;
+	background:#4682B4;
+	padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    border: solid 1px #4682B4;
+    border-radius: 3px;	
+}
+
+#content{
+	position: relative;
+    margin: 0% 0% 7% 0%;
+}
+
+.CapText{
+	font: normal 54px/1 "Times New Roman", Times, serif;
+	color:white;
+	margin-left: 60%;
+}
+
+.MainText{
+	font: normal 18px/1 "Times New Roman", Times, serif;
+	color:white;
+}
+
+#cnt ul {
+	height: 40px;
+	overflow: hidden;
+}
+
+#cnt ul li {
+	height: 40px;
+	color:white;
+	font:normal 54px/1 "Times New Roman", Times, serif;
+}
+
+#ticker{
+	height: 40px;
+	overflow: hidden;
+}
+#ticker li{
+	height: 40px;
+	color:white;
+	font:normal 54px/1 "Times New Roman", Times, serif;
+}
+
+#flip_registration {
+	width: 140px;
+	height: 200px;
+    font-size: 18px;
+    text-align: center;
+    background: rgba(0, 170, 238, 0.3);
+    padding: 82px;
+    display: none;
+    margin-bottom:20px;
+	border-radius: 10px 10px 10px 10px; 
+}
+
+#flip_enter {
+	width: 140px;
+	height: 200px;
+    font-size: 18px;
+    text-align: center;
+    background: rgba(0, 170, 238, 0.3);
+    padding: 82px;
+    display: none;
+    margin-bottom:20px;
+	border-radius: 10px 10px 10px 10px; 
+}
+
+#flip_registration ul li,#flip_enter ul li{
+	margin-top:30px;
+}
+
+#button_close1,#button_close2{
+	background-color:#F0FFFF;
+	color:#FF0000;
+	width:100px;	
+}
+
+#regist_button,#enter_button{
+	background-color:#F0FFFF;
+	color:#197707;
+	width:100px;	
+}
+
+#popup {
+	width: 550px;
+	background: #fff;
+	padding: 30px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	border-radius: 3px;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5), inset 0 0 60px rgba(0, 0, 0, 0.2);
+	color: #565656;
+	z-index: 1000;
+	display: none;
+}
+
+#popup h3 {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#popup p {
+	margin: 6px 0;
+}
+
+#popup a {
+	color: #66c3e6;
+}
+
+#close_popup {
+	width: 14px;
+	height: 16px;
+	background: url(../images/close.png) no-repeat;
+	cursor: pointer;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+#overlay {
+    background: #000;
+    position: fixed;
+	top: 0;
+    left: 0;
+    height: 100%;
+	width: 100%;
+    opacity: 0.5;
+    z-index: 999;
+	display: none;
+}
+
+#footer{
+	float:middle;
+	margin-bottom:10px;
+}
+
+#footer ul{
+	padding-left:20px;
+	overflow:hidden;
+}
+
+#footer ul li{
+	float: left;
+	font: bold 18px Arial, Verdana;
+	color: #4682B4;
+	margin-right: 60px;
+	margin-top: 35px;
+}
+
+#footer ul li a{	
+	color: #4682B4;
+	text-decoration: none;
+}
+#footer ul li span{
+	color: #4682B4;
+}
+
+#footer.current, #footer ul li a:hover{
+	text-decoration: underline;
+}
+
+#footer.phone{
+	float:right;
+	margin-right:10px;
+}
+
+#cap{
+	height: 80px;
+	float:middle;
+}
+
+#cap ul{
+	padding-left:20px;
+	overflow:hidden;
+}
+
+#cap ul li{
+	float: left;
+	font: bold 18px Arial, Verdana;
+	color: #088A08;
+	margin-right: 60px;
+	margin-top: 35px;
+}
+
+#cap ul li a{	
+	color: #088A08;
+	text-decoration: none;
+}
+#cap ul li span{
+	color: #088A08;
+}
+
+#cape.current, #footer ul li a:hover{
+	text-decoration: underline;
+}
+
+#name.phone{
+	float:right;
+	margin-right:10px;
+}
+
+/* Оформление для страницы с футболом*/
+
+#football_cap{
+	background: url(../images/football_cap.jpg) no-repeat;
+	height: 70px;
+	margin: 0% 0% 7% 0%;
+}
+
+#football_cap ul{
+	padding-left:20px;
+	overflow:hidden;
+}
+
+#football_cap ul li{
+	float: left;
+	font: bold 18px Arial, Verdana;
+	color: #FFFFFF;
+	margin-right: 60px;
+	margin-top: 35px;
+}
+
+#football_cap ul li a{	
+	color: #FFFFFF;
+	text-decoration: none;
+}
+#football_cap ul li span{
+	color: #FFFFFF;
+}
+
+#logo_football{
+	height: 100px;
+	width: 100px;
+	float: right;
+	margin:0 0 0 0;	
+}
+
+.football_block {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  position: relative;
+  cursor: pointer;
+  right: -28px;
+  left: 1px;
+  margin: 10px 60px 10px 60px;
+  padding: 20px 48px 20px 20px;
+  overflow: hidden;
+  border: none;
+  font: normal 16px/1 "Times New Roman", Times, serif;
+  color: rgba(255,255,255,1);
+  text-align: center;
+  background: #32CD32;
+  -webkit-box-shadow: 6px 5px 4px 0 rgba(0,0,0,0.3) ;
+  box-shadow: 6px 5px 4px 0 rgba(0,0,0,0.3) ;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
+}
+
